@@ -1,0 +1,144 @@
+body{
+    font-size: 62.5%;
+    margin: 0%;
+    padding: 0%;
+    background-color: #020024;
+
+}
+.main{
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 96%);
+    width: 60vw;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px ;
+}
+
+.main h1{
+  margin-top: 20px;
+  display: block;
+  text-align: center;
+  font-size: 2.4rem;
+  font-family: 'EB Garamond', serif;
+  text-shadow: 2px 2px 8px #531111;
+}
+#desc{
+    /* background-color: rgb(97, 97, 175); */
+    display: inline-flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+}
+#desc input[type=text]{
+    font-family: 'Cormorant', serif;
+    padding: 3px;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+label{
+    font-size: 1.3rem;
+    padding: 10px;
+}
+#dsc{
+    height: 30px;
+    width: 80%;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    text-align: center;
+}
+#ctgy{
+    width: 50%;
+    height: 3rem;
+    margin-top: 8px;
+    display: inline-flex;
+    align-items: center;
+}
+#tags{
+    height: 1.8rem;
+    width: 10rem;
+}
+#calender{
+    width: 49.5%;
+    height: 3rem;
+    margin-top: 8px;
+    display: inline-flex;
+    align-items: center;
+   
+}
+#calender #Cdate{
+    width: 13.3rem;
+    height: 2rem;
+}
+label{
+    font-family: 'Play', sans-serif;
+}
+button{
+    display: block;
+    height: 3rem;
+    margin: auto;
+    background-color: rgb(138, 179, 170);
+    margin-top: 10px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    cursor: pointer;
+}
+button:hover{
+    box-shadow: 2px 2px 8px #ce3434;
+    background-color: rgb(143, 92, 15);
+}
+.fa-plus{
+    padding: 5px;
+    font-size: 1.5rem;
+}
+
+.container ul li{
+    display: flex;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(205,186,157,1) 9%, rgba(140,21,21,1) 59%);
+    margin: 10px;
+}
+
+.container ul li h2{
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding:0px 10px 0px 10px;
+    width: 50%;
+    text-align: center;
+    font-family: 'Cormorant', serif;
+    font-weight: 600;
+}
+
+.container ul li #Idate{
+  margin-top: 0%;
+  font-size: 0.7rem;
+}
+
+.container ul li #Ictgy{
+    font-size: 1.2rem;
+    width: 20%;
+    text-align: center;
+    align-items: center;
+    background-color: tomato;
+    height: 2rem;
+    display: inline-grid;
+    font-family: 'Play', sans-serif;
+    font-weight: 700;
+}
+
+input[type=checkbox] {
+    padding-left: 9px;
+    transform: scale(1.5);
+    width: 3rem;
+}
+.fa-times{
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 2rem;
+    color: brown;
+}
