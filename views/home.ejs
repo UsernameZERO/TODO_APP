@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title%></title>
+    <script
+      src="https://kit.fontawesome.com/6e3ab34902.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,300&family=EB+Garamond:ital,wght@1,600&family=Play&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/home.css" />
+  </head>
+  <body>
+    <div class="main">
+      <h1>TODO APP</h1>
+      <form action="/createTasks" method="post">
+        <div id="desc">
+          <label for="dsc">Description</label>
+          <input
+            type="text"
+            id="dsc"
+            name="description"
+            placeholder="what do you need to do"
+            required
+          />
+        </div>
+        <div id="ctgy">
+          <label for="tags">Category</label>
+          <select name="category" id="tags" required>
+            <option value="personal">Personal</option>
+            <option value="work">Work</option>
+            <option value="school">School</option>
+            <option value="cleaning">Cleaning</option>
+            <option value="others">Others</option>
+          </select>
+        </div>
+        <span>
+          <div id="calender">
+            <label for="Cdate">Due Date</label>
+            <input type="date" name="date" id="Cdate" />
+          </div>
+        </span>
+
+        <button type="submit"><i class="fas fa-plus"></i>Add Task</button>
+      </form>
+
+      <div class="container">
+        <ul>
+          <% for(let i of Tlists){%>
+          <li>
+            <input type="checkbox" />
+            <p id="Idate"><%= i.date%></p>
+            <h2><%= i.description%></h2>
+            <p id="Ictgy"><%= i.category%></p>
+            <a href="/deleteTaks/?id=<%= i._id%>"
+              ><i class="fas fa-times"></i
+            ></a>
+          </li>
+          <%}%>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
